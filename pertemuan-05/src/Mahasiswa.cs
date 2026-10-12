@@ -20,14 +20,7 @@ public class Mahasiswa : Anggota
         // TODO(Level 3): nrp/prodi null/kosong/spasi -> ArgumentException;
         //   selain itu isi Nrp dan Prodi. (Konstruktor kelas induk sudah
         //   dipanggil lewat `: base(...)` di atas.)
-        if (string.IsNullOrWhiteSpace(nrp))
-            throw new ArgumentException("NRP tidak boleh kosong.", nameof(nrp));
-        if (string.IsNullOrWhiteSpace(prodi))
-            throw new ArgumentException("Prodi tidak boleh kosong.", nameof(prodi));
-
-        Nrp = nrp;
-        Prodi = prodi;
-        BatasPinjam = 3;
+        throw new NotImplementedException("Level 3 belum diimplementasikan");
     }
 
     public string InfoLengkap()
@@ -35,6 +28,6 @@ public class Mahasiswa : Anggota
         // TODO(Level 7): gabungkan Info() milik kelas induk dengan data khusus
         //   mahasiswa, dipisah " | ": "<Info()> | NRP: <Nrp> | Prodi: <Prodi> |
         //   Alamat: <Alamat>" (Alamat memakai ToString() milik objek Alamat).
-        return $"{Info()} | NRP: {Nrp} | Prodi: {Prodi} | Alamat: {Alamat}";
+        throw new NotImplementedException("Level 7 belum diimplementasikan");
     }
 }
